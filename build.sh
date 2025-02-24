@@ -14,7 +14,7 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 # this installs a package from fedora repos
 dnf install -y tmux tailscale 
 
-scp -r /etc/.config/* /etc/xdg/
+scp -r /etc/skel/.config/* /etc/xdg/
 
 # Use a COPR Example:
 #
