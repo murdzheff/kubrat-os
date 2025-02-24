@@ -8,9 +8,13 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
+curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo 
+
 
 # this installs a package from fedora repos
-dnf install -y tmux 
+dnf install -y tmux tailscale 
+
+
 
 # Use a COPR Example:
 #
