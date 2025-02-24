@@ -17,7 +17,7 @@ dnf copr enable peterwu/iosevka
 dnf install -y tmux tailscale curl
 
 #install iosevka
-curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip | unzip -d /usr/share/fonts/
+curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip | unzip -d /usr/share/fonts/ -
 
 scp -r /etc/skel/.config/* /etc/xdg/
 scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
