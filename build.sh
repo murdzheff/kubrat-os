@@ -8,11 +8,16 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
-curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo 
+curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
+dnf copr enable peterwu/iosevka
+
 
 
 # this installs a package from fedora repos
-dnf install -y tmux tailscale 
+dnf install -y tmux tailscale curl
+
+#install iosevka
+curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip | unzip -d /usr/share/fonts/
 
 scp -r /etc/skel/.config/* /etc/xdg/
 scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
