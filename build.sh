@@ -15,7 +15,7 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 dnf install -y tmux tailscale 
 
 scp -r /etc/skel/.config/* /etc/xdg/
-scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hypr/
+scp -r /etc/skel/.config/hyprland/hyprland.conf /usr/share/hypr/
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
