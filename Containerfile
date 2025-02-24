@@ -14,6 +14,7 @@ FROM ghcr.io/wayblueorg/hyprland:latest
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+COPY hyprblue-files /tmp/hyprblue-files
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
