@@ -14,7 +14,7 @@ dnf copr enable peterwu/iosevka
 
 
 # this installs a package from fedora repos
-dnf install -y tmux tailscale curl wayrdp
+dnf install -y tmux tailscale curl wayvnc
 
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
