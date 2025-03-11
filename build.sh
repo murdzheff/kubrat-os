@@ -12,7 +12,7 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 #dnf copr enable peterwu/iosevka
 
 # this installs a package from fedora repos
-dnf install -y tmux tailscale curl wayvnc \
+dnf install -y tmux tailscale curl tigervnc-server tigervnc-server-module \
  xfreerdp xfce4-docklike-plugin ulauncher
 
 #install iosevka
