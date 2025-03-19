@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/vauxite-main:latest
+FROM ghcr.io/ublue-os/silverblue-main:latest
 
 
 ## Other possible base images include:
