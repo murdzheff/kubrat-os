@@ -24,7 +24,19 @@ fc-cache -vf
 mkdir -p /var/roothome/
 wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run
 wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run.asc
-sh -c "echo 'y' | hp-plugin -i -p hplip-3.24.4-plugin.run"
+
+dnf install expect -y  # If using Debian-based image
+
+cat <<EOF > install_hp_plugin.exp
+#!/usr/bin/expect -f
+spawn hp-plugin -i -p hplip-3.24.4-plugin.run
+expect "Do you accept the license terms*" 
+send "y\r"
+expect eof
+EOF
+
+chmod +x install_hp_plugin.exp
+./install_hp_plugin.exp
 
 
 
