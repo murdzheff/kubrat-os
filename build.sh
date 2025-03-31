@@ -24,7 +24,7 @@ fc-cache -vf
 mkdir -p /var/roothome/
 wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run
 wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run.asc
-/usr/bin/sudo sh -c "yes '' | hp-plugin -i -p hplip-3.24.4-plugin.run"
+sh -c "yes '' | hp-plugin -i -p hplip-3.24.4-plugin.run"
 
 
 
