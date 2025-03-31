@@ -13,12 +13,18 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 
 # this installs a package from fedora repos
 dnf install -y tmux tailscale curl \
- xfreerdp xfce4-docklike-plugin ulauncher
+ xfreerdp xfce4-docklike-plugin ulauncher hp-plugin
 
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
+
+
+mkdir -p /var/roothome/
+wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run
+wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run.asc
+/usr/bin/sudo sh -c "yes '' | hp-plugin -i -p hplip-3.24.4-plugin.run"
 
 
 
