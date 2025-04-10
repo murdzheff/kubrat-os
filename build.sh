@@ -10,12 +10,14 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 #dnf copr enable peterwu/iosevka
+dnf copr enable solopasha/hyprland
+
 
 # this installs a package from fedora repos
 dnf install -y tmux tailscale curl \
  xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprlock \
- rofi kitty thunar xdg-desktop-portal-hyprland waybar
-
+ rofi kitty thunar xdg-desktop-portal-hyprland waybar nwg-look hyprsunset hyprpicker \
+ hyprpanel hyprpolkitagent hyprland-autoname-workspaces hyprshot nwg-clipman dunst
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
