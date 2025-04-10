@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 #dnf copr enable peterwu/iosevka
-dnf copr enable solopasha/hyprland
+dnf5 -y copr enable solopasha/hyprland
 
 
 # this installs a package from fedora repos
@@ -35,7 +35,7 @@ fc-cache -vf
 # dnf5 -y copr enable ublue-os/staging
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr disable solopasha/hyprland
 
 #### Example for enabling a System Unit File
 
