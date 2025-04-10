@@ -13,7 +13,8 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 
 # this installs a package from fedora repos
 dnf install -y tmux tailscale curl \
- xfreerdp xfce4-docklike-plugin ulauncher hp-plugin
+ xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprshot hyprlock \
+ rofi kitty thunar
 
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
@@ -21,27 +22,12 @@ unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
 
 
-mkdir -p /var/roothome/
-wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run
-wget https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/hplip-3.24.4-plugin.run.asc
-
-dnf install expect -y  # If using Debian-based image
-
-cat <<EOF > install_hp_plugin.exp
-#!/usr/bin/expect -f
-spawn hp-plugin -i -p hplip-3.24.4-plugin.run
-expect "Do you accept the license terms*" 
-send "y\r"
-expect eof
-EOF
-
-chmod +x install_hp_plugin.exp
-./install_hp_plugin.exp
 
 
+scp -r /etc/skel/.config/* /etc/xdg/
+scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
 
-#scp -r /etc/skel/.config/* /etc/xdg/
-#scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
