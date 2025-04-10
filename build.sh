@@ -13,7 +13,7 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 
 # this installs a package from fedora repos
 dnf install -y tmux tailscale curl \
- xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprshot hyprlock \
+ xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprlock \
  rofi kitty thunar
 
 #install iosevka
