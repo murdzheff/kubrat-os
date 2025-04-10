@@ -13,12 +13,98 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 dnf5 -y copr enable solopasha/hyprland
 
 
-# this installs a package from fedora repos
-dnf install -y tmux tailscale curl \
- xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprlock \
- rofi-wayland kitty thunar xdg-desktop-portal-hyprland waybar nwg-look hyprsunset hyprpicker \
- hyprpanel hyprcursor hyprpolkitagent hyprland-autoname-workspaces hyprshot nwg-clipman dunst lxappearance \
- gvfs-smb  smbclient
+
+
+packages=(
+  tmux
+  tailscale
+  curl
+  xfreerdp
+  hyprland
+  hyprpaper
+  hyprlock
+  rofi-wayland
+  kitty
+  xdg-desktop-portal-hyprland
+  waybar
+  nwg-look
+  hyprsunset
+  hyprpicker
+  xorg-x11-server-Xwayland
+  headsetcontrol
+  polkit
+  xfce-polkit
+  xdg-user-dirs
+  dbus-tools
+  dbus-daemon
+  wl-clipboard
+  pavucontrol
+  playerctl
+  qt5-qtwayland
+  qt6-qtwayland
+  vulkan-validation-layers
+  vulkan-tools
+  google-noto-emoji-fonts
+  gnome-disk-utility
+  ddcutil
+  openssl
+  vim
+  just
+  alsa-firmware
+  p7zip
+  distrobox
+  hyprpanel
+  hyprcursor
+  hyprpolkitagent
+  hyprland-autoname-workspaces
+  hyprshot
+  nwg-clipman
+  dunst
+  lxappearance
+  gvfs-smb
+  smbclient
+  wireplumber
+  pipewire
+  pamixer
+  pulseaudio-utils
+  NetworkManager-openvpn
+  NetworkManager-openvpn-gnome
+  NetworkManager-openconnect
+  NetworkManager-openconnect-gnome
+  bluez
+  bluez-tools
+  blueman
+  firewall-config
+  thunar
+  thunar-archive-plugin 
+  thunar-volman
+  xarchiver
+  imv
+  p7zip
+  gvfs-mtp
+  gvfs-gphoto2
+  gvfs-smb
+  gvfs-nfs
+  gvfs-fuse
+  gvfs-archive
+  android-tools
+  slurp
+  grim
+  wlr-randr
+  brightnessctl
+  kanshi
+  fontawesome-fonts-all
+  gnome-themes-extra
+  gnome-icon-theme
+  paper-icon-theme
+  breeze-icon-theme 
+)
+
+for package in "${packages[@]}"; do
+  dnf install -y "$package"
+done
+
+
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
