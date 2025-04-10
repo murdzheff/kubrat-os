@@ -24,8 +24,8 @@ fc-cache -vf
 
 
 
-scp -r /etc/skel/.config/* /etc/xdg/
-scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
+#scp -r /etc/skel/.config/* /etc/xdg/
+#scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
 
 
 # Use a COPR Example:
