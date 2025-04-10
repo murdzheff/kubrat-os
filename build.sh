@@ -16,7 +16,7 @@ dnf5 -y copr enable solopasha/hyprland
 # this installs a package from fedora repos
 dnf install -y tmux tailscale curl \
  xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprlock \
- rofi kitty thunar xdg-desktop-portal-hyprland waybar nwg-look hyprsunset hyprpicker \
+ rofi-wayland kitty thunar xdg-desktop-portal-hyprland waybar nwg-look hyprsunset hyprpicker \
  hyprpanel hyprcursor hyprpolkitagent hyprland-autoname-workspaces hyprshot nwg-clipman dunst lxappearance \
  gvfs-smb  smbclient
 #install iosevka
