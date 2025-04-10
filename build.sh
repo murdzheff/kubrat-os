@@ -17,7 +17,7 @@ dnf5 -y copr enable solopasha/hyprland
 dnf install -y tmux tailscale curl \
  xfreerdp xfce4-docklike-plugin ulauncher hp-plugin hyprland hyprpaper hyprlock \
  rofi kitty thunar xdg-desktop-portal-hyprland waybar nwg-look hyprsunset hyprpicker \
- hyprpanel hyprpolkitagent hyprland-autoname-workspaces hyprshot nwg-clipman dunst
+ hyprpanel hyprcursor hyprpolkitagent hyprland-autoname-workspaces hyprshot nwg-clipman dunst lxappearance
 #install iosevka
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
