@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/base-main:latest
+FROM ghcr.io/ublue-os/cinnamon-bootc:latest
 
 
 ## Other possible base images include:
