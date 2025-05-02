@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/xfce-atomic:42
+FROM quay.io/wayblueorg/hyprland:latest
 
 
 ## Other possible base images include:
@@ -15,7 +15,7 @@ FROM quay.io/fedora-ostree-desktops/xfce-atomic:42
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
-
+COPY .config /tmp/.config
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
