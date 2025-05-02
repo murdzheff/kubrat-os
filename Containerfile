@@ -1,4 +1,4 @@
-FROM quay.io/wayblueorg/hyprland:latest
+FROM ghcr.io/wayblueorg/hyprland:latest
 
 
 ## Other possible base images include:
