@@ -112,7 +112,7 @@ unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
 
 
-cp -r /tmp/.config /etc/murdzheff
+cp -r /tmp/.config /etc/custom-configs
 
 
 
