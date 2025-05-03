@@ -19,7 +19,7 @@ dnf5 -y copr enable solopasha/hyprland
 packages=(
   tmux
   tailscale
-  miracle-wm
+  labwc
   curl
   xfreerdp
   hyprland
