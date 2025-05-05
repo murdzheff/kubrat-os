@@ -13,14 +13,13 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 
 dnf5 -y copr enable solopasha/hyprland
 
-
+dnf install @development-tools
 
 
 packages=(
   tmux
   tailscale
   curl
-  build-essential 
   gcc
   xfreerdp
   hyprland
