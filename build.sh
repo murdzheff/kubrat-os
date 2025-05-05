@@ -20,6 +20,8 @@ packages=(
   tmux
   tailscale
   curl
+  build-essential 
+  gcc
   xfreerdp
   hyprland
   hyprpaper
