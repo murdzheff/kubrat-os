@@ -20,7 +20,6 @@ packages=(
   curl
   gcc
   xfreerdp
-  hyprpaper
   rofi-wayland
   kitty
   xdg-desktop-portal-hyprland
