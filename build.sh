@@ -96,6 +96,7 @@ packages=(
   brightnessctl
   kanshi
   fontawesome-fonts-all
+  syncthing
   gnome-themes-extra
   gnome-icon-theme
   paper-icon-theme
