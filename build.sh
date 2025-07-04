@@ -113,22 +113,11 @@ curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevk
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
 
-ln -s /var/root /root
 
 
 cp -r /tmp/.config /etc/custom-configs
 
 
-
-#install ly
-dnf install kernel-devel pam-devel libxcb-devel zig -y
-
-git clone https://codeberg.org/AnErrupTion/ly
-
-cd ly
-zig build
-zig build installexe
-systemctl enable ly.service
 
 
 
