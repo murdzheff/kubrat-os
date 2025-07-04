@@ -47,7 +47,6 @@ packages=(
   alsa-firmware
   p7zip
   distrobox
-  nwg-clipman
   dunst
   lxappearance
   gvfs-smb
