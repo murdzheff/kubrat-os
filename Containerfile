@@ -1,4 +1,4 @@
-FROM ghcr.io/wayblueorg/hyprland:latest
+FROM ghcr.io/wayblueorg/sway:latest
 
 
 ## Other possible base images include:
