@@ -11,8 +11,6 @@ set -ouex pipefail
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 
 
-dnf5 -y copr enable solopasha/hyprland
-
 dnf install @development-tools -y
 
 
@@ -22,16 +20,12 @@ packages=(
   curl
   gcc
   xfreerdp
-  hyprland
   hyprpaper
-  hyprlock
   rofi-wayland
   kitty
   xdg-desktop-portal-hyprland
   waybar
   nwg-look
-  hyprsunset
-  hyprpicker
   xorg-x11-server-Xwayland
   headsetcontrol
   polkit
@@ -55,11 +49,6 @@ packages=(
   alsa-firmware
   p7zip
   distrobox
-  hyprpanel
-  hyprcursor
-  hyprpolkitagent
-  hyprland-autoname-workspaces
-  hyprshot
   nwg-clipman
   dunst
   lxappearance
@@ -97,6 +86,7 @@ packages=(
   kanshi
   fontawesome-fonts-all
   syncthing
+  helix
   gnome-themes-extra
   gnome-icon-theme
   paper-icon-theme
