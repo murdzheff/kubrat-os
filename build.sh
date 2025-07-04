@@ -24,7 +24,6 @@ packages=(
   kitty
   xdg-desktop-portal-hyprland
   waybar
-  nwg-look
   xorg-x11-server-Xwayland
   headsetcontrol
   polkit
