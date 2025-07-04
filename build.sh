@@ -117,7 +117,7 @@ cp -r /tmp/.config /etc/custom-configs
 # dnf5 -y copr enable ublue-os/staging
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable solopasha/hyprland
+
 
 #### Example for enabling a System Unit File
 
