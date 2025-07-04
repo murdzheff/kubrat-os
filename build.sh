@@ -113,8 +113,11 @@ curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevk
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
 
+ln -s /var/root /root
+
 
 cp -r /tmp/.config /etc/custom-configs
+
 
 
 #install ly
