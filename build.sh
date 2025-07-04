@@ -117,6 +117,17 @@ fc-cache -vf
 cp -r /tmp/.config /etc/custom-configs
 
 
+#install ly
+dnf install kernel-devel pam-devel libxcb-devel zig -y
+
+git clone https://codeberg.org/AnErrupTion/ly
+
+cd ly
+zig build
+zig build installexe
+systemctl enable ly.service
+
+
 
 #scp -r /etc/skel/.config/* /etc/xdg/
 #scp -r /etc/skel/.config/hypr/hyprland.conf /usr/share/hyprland/
