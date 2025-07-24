@@ -34,7 +34,6 @@ fc-cache -vf
 
 
 
-cp -r /tmp/.config /etc/custom-configs
 
 
 
