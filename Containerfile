@@ -1,4 +1,4 @@
-FROM ghcr.io/wayblueorg/sway:latest
+FROM ghcr.io/ublue-os/bluefin:stable
 
 
 ## Other possible base images include:
