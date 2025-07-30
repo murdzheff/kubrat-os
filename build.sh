@@ -16,6 +16,7 @@ packages=(
   gcc
   xfreerdp
   syncthing
+  git
   helix
 )
 
@@ -28,10 +29,15 @@ done
 curl -sL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip -o /tmp/Iosevka.zip
 unzip /tmp/Iosevka.zip -d /usr/share/fonts/
 fc-cache -vf
+# Cloner le repository
+git clone https://github.com/Mounik/omarchy-fedora
+cd omarchy-fedora
 
+# Rendre le script exécutable
+chmod +x install.sh
 
-
-curl -fsSL https://raw.githubusercontent.com/Mounik/omarchy-fedora/main/boot.sh | bash
+# Lancer l'installation (avec sudo)
+sudo ./install.sh
 
 
 
