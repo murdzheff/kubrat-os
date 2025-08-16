@@ -8,23 +8,19 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 
+sudo dnf config-manager -y addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+
 
 
 packages=(
   tmux
   curl
+  tailscale
   gcc
   xfreerdp
   syncthing
   git
   helix
-  gcc-c++
-  make
-  cmake
-  autoconf
-  automake
-  libtool
-  pkgconf-devel
 )
 
 for package in "${packages[@]}"; do
