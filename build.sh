@@ -8,8 +8,7 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 
-sudo dnf config-manager -y addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-
+curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 
 
 packages=(
@@ -18,6 +17,7 @@ packages=(
   tailscale
   gcc
   xfreerdp
+  kitty
   syncthing
   git
   helix
