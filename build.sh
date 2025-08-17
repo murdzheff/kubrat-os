@@ -17,6 +17,7 @@ packages=(
   tailscale
   gcc
   xfreerdp
+  NetworkManager-tui
   kitty
   syncthing
   git
