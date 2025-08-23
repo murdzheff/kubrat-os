@@ -21,6 +21,7 @@ packages=(
   kitty
   syncthing
   git
+  niri
   helix
 )
 
