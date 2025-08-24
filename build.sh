@@ -24,11 +24,14 @@ packages=(
   git
   niri
   helix
+  nautilus
 )
 
 for package in "${packages[@]}"; do
   dnf install -y "$package"
 done
+
+dnf remove -y thunar*
 
 
 
