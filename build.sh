@@ -27,7 +27,6 @@ packages=(
   xfreerdp
   NetworkManager-tui
   kitty
-  swww
   syncthing
   git
   niri
