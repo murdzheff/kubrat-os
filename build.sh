@@ -21,6 +21,7 @@ packages=(
   NetworkManager-tui
   kitty
   syncthing
+  fish
   git
   niri
   helix
