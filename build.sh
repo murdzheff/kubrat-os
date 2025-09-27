@@ -8,31 +8,32 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 
-curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
+#curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 
 
 
 packages=(
-  tmux
-  curl
-  tailscale
-  gcc
-  xfreerdp
-  NetworkManager-tui
-  kitty
-  syncthing
-  fish
-  git
-  niri
-  helix
-  nautilus
+#  tmux
+#  curl
+#  tailscale
+#  gcc
+# xfreerdp
+#  NetworkManager-tui
+#  kitty
+#  syncthing
+#  fish
+#  git
+#  niri
+#  helix
+ tlp
+ # nautilus
 )
 
 for package in "${packages[@]}"; do
   dnf install -y "$package"
 done
 
-dnf remove -y thunar* Thunar* Thuna*
+#dnf remove -y thunar* Thunar* Thuna*
 
 
 
