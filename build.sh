@@ -25,6 +25,11 @@ packages=(
    niri
 #  helix
    tlp
+   swaybg
+   wlsunset
+   pavucontrol
+   blueman-applet
+   nm-applet
    waybar
    swaylock
    swayidle
