@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin:lts
+FROM ghcr.io/ublue-os/bluefin:stable
 
 
 ## Other possible base images include:
