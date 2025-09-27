@@ -12,19 +12,24 @@ set -ouex pipefail
 
 
 packages=(
-#  tmux
-#  curl
-#  tailscale
+  tmux
+  
 #  gcc
-# xfreerdp
-#  NetworkManager-tui
+#  xfreerdp
+   NetworkManager-tui
 #  kitty
-#  syncthing
+   syncthing
+   zsh
 #  fish
 #  git
-#  niri
+   niri
 #  helix
- tlp
+   tlp
+   waybar
+   swaylock
+   swayidle
+   dunst
+   fuzzel
  # nautilus
 )
 
