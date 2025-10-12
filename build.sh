@@ -12,37 +12,15 @@ set -ouex pipefail
 
 
 packages=(
-  tmux
-  
-#  gcc
-#  xfreerdp
-   NetworkManager-tui
-#  kitty
-   syncthing
-   zsh
-#  fish
-#  git
-   niri
-#  helix
+   helix
    tlp
-   swaybg
-   wlsunset
-   pavucontrol
-   blueman-applet
-   nm-applet
-   waybar
-   swaylock
-   swayidle
-   dunst
-   fuzzel
- # nautilus
 )
 
 for package in "${packages[@]}"; do
   dnf install -y "$package"
 done
 
-#dnf remove -y thunar* Thunar* Thuna*
+dnf remove -y tuned
 
 
 
