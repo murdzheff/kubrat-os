@@ -14,7 +14,6 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 packages=(
    tailscale
    helix
-   tlp
 )
 
 for package in "${packages[@]}"; do
