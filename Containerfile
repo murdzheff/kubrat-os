@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin:stable
+FROM quay.io/repository/fedora-ostree-desktops/cosmic-atomic:43
 
 
 ## Other possible base images include:
