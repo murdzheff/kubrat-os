@@ -1,4 +1,4 @@
-FROM quay.io/repository/fedora-ostree-desktops/cosmic-atomic:43
+FROM quay.io/fedora-ostree-desktops/cosmic-atomic:43
 
 
 ## Other possible base images include:
