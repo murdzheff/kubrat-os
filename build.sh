@@ -14,6 +14,7 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 packages=(
    tailscale
    helix
+   hyprland-qtutils
 )
 
 for package in "${packages[@]}"; do
@@ -25,7 +26,8 @@ dnf remove -y tuned
 
 
 
-
+dnf5 -y copr enable avengemedia/dms
+dnf5 -y install dms
 
 
 # Use a COPR Example:
