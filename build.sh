@@ -15,6 +15,10 @@ packages=(
    tailscale
    helix
    hyprland-qtutils
+   greetd
+   zsh
+   fastfetch
+   
 )
 
 for package in "${packages[@]}"; do
