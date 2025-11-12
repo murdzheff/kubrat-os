@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/cosmic-atomic:43
+FROM ghcr.io/wayblueorg/hyprland:latest
 
 
 ## Other possible base images include:
