@@ -15,6 +15,7 @@ packages=(
    tailscale
    helix
    hyprland-qtutils
+   wl-clipboard
    greetd
    zsh
    fastfetch
