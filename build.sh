@@ -40,8 +40,7 @@ dnf5 -y install dms
 # dnf5 -y copr enable ublue-os/staging
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y disable avengemedia/danklinux
-dnf5 -y disable avengemedia/dms
+
 
 #### Example for enabling a System Unit File
 
