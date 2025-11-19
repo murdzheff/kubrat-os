@@ -65,12 +65,9 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 packages=(
    tailscale
    helix
-   hyprland-qtutils
-   wl-clipboard
    greetd
    zsh
    fastfetch
-   
 )
 
 for package in "${packages[@]}"; do
