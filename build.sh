@@ -8,6 +8,9 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 
+
+dnf5 group install "@cinnamon-desktop-environment" -y
+
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 
 
@@ -23,10 +26,9 @@ packages=(
 )
 
 for package in "${packages[@]}"; do
-  dnf install -y "$package"
+  dnf5 install -y "$package"
 done
 
-dnf remove -y tuned
 
 
 
