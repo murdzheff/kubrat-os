@@ -73,5 +73,4 @@ done
 
 
 #### Example for enabling a System Unit File
-systemctl enable lightdm.service
 systemctl enable podman.socket
