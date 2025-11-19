@@ -20,8 +20,13 @@ $PACKAGE_MANAGER install \
     cinnamon-control-center \
     nemo \
     cinnamon-screensaver \
-    lightdm \
     @base-x \
+    gnome-terminal \
+    firefox \
+    xdg-user-dirs-gtk \
+    bash-completion \
+    gstreamer1-plugins-base \
+    polkit \
     -y
 
 # 2. Install essential utilities for a smooth experience
