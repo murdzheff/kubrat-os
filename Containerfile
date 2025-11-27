@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/base-main:latest
+FROM ghcr.io/wayblue/hyprland:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
@@ -14,7 +14,6 @@ FROM ghcr.io/ublue-os/base-main:latest
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
-COPY .config /tmp/.config
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \

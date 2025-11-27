@@ -10,41 +10,6 @@ set -ouex pipefail
 
 #!/bin/bash
 
-# Define the package manager command (use 'dnf5' for uBlue/etc., or 'dnf' for standard Fedora)
-PACKAGE_MANAGER="dnf5" 
-
-
-# 'cinnamon-screensaver' for locking the screen.
-$PACKAGE_MANAGER install \
-    cinnamon \
-    cinnamon-control-center \
-    nemo \
-    cinnamon-screensaver \
-    @base-x \
-    gnome-terminal \
-    firefox \
-    xdg-user-dirs-gtk \
-    bash-completion \
-    gstreamer1-plugins-base \
-    polkit \
-    -y
-
-# 2. Install essential utilities for a smooth experience
-echo "Installing essential utilities..."
-$PACKAGE_MANAGER install \
-    gnome-terminal \
-    -y
-
-
-
-
-echo "Checking and setting the graphical target (using existing display manager)..."
-
-systemctl set-default graphical.target
-
-
-
-
 
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
 
@@ -52,9 +17,9 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 packages=(
    tailscale
    helix
-   greetd
    zsh
    fastfetch
+   niri
 )
 
 for package in "${packages[@]}"; do
