@@ -18,6 +18,8 @@ packages=(
    tailscale
    helix
    zsh
+   swaybg
+   swayidle
    alacritty
    telnet
    fastfetch
