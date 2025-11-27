@@ -18,6 +18,8 @@ packages=(
    tailscale
    helix
    zsh
+   alacritty
+   telnet
    fastfetch
    niri
 )
