@@ -1,4 +1,4 @@
-FROM ghcr.io/wayblue/hyprland:latest
+FROM ghcr.io/wayblueorg/hyprland:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
