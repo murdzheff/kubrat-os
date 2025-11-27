@@ -18,6 +18,8 @@ packages=(
    tailscale
    helix
    zsh
+   xdg-desktop-portal
+   xdg-desktop-portal-gnome
    swaybg
    swayidle
    alacritty
