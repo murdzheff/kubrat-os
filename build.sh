@@ -19,6 +19,7 @@ packages=(
    helix
    zsh
    xdg-desktop-portal
+   nemo
    xdg-desktop-portal-gnome
    swaybg
    swayidle
