@@ -1,4 +1,4 @@
-FROM quay.io/repository/fedora-ostree-desktops/cosmic-atomic
+FROM quay.io/repository/fedora-ostree-desktops/cosmic-atomic:43
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
