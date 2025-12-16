@@ -1,4 +1,4 @@
-FROM ghcr.io/wayblueorg/hyprland:latest
+FROM quay.io/repository/fedora-ostree-desktops/cosmic-atomic
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
