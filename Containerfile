@@ -13,6 +13,9 @@ FROM ghcr.io/wayblueorg/hyprland:latest
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+#homebrew from bluefin ;)
+COPY --from=ghcr.io/projectbluefin/brew:latest /system_files /
+
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
