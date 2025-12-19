@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin-dx:gtx
+FROM ghcr.io/ublue-os/bluefin-dx:gts
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
