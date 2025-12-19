@@ -15,18 +15,19 @@ curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/cen
 
 
 packages=(
-   tailscale
+   
    helix
    zsh
-   xdg-desktop-portal
-   nemo
-   xdg-desktop-portal-gnome
+   
    swaybg
+   swaylock
    swayidle
    alacritty
    telnet
    fastfetch
    niri
+   waybar
+   
 )
 
 for package in "${packages[@]}"; do
