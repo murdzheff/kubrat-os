@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/sway-atomic:43
+FROM ghcr.io/ublue-os/bluefin-dx:gtx
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
@@ -14,7 +14,7 @@ FROM quay.io/fedora-ostree-desktops/sway-atomic:43
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 #homebrew from bluefin ;)
-COPY --from=ghcr.io/projectbluefin/brew:latest /system_files /
+#COPY --from=ghcr.io/projectbluefin/brew:latest /system_files /
 
 COPY build.sh /tmp/build.sh
 
