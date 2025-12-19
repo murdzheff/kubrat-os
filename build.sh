@@ -26,6 +26,9 @@ packages=(
    telnet
    fastfetch
    waybar
+   wlsunset
+   brightnessctl
+   fuzzel
    sway
 )
 
