@@ -25,9 +25,8 @@ packages=(
    alacritty
    telnet
    fastfetch
-   niri
    waybar
-   
+   sway
 )
 
 for package in "${packages[@]}"; do
