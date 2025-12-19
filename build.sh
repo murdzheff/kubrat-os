@@ -19,7 +19,6 @@ packages=(
    helix
    zsh
    wl-clipboard
-   cliphist
    pavucontrol
    swaybg
    swaylock
