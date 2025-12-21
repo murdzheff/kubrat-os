@@ -31,6 +31,7 @@ packages=(
    brightnessctl
    fuzzel
    sway
+   labwc
 )
 
 for package in "${packages[@]}"; do
