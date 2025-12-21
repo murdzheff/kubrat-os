@@ -9,10 +9,9 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 
 #!/bin/bash
-
+dnf5 -y copr enable dennemann/MangoWC 
 
 curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
-dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 packages=(
    
@@ -32,7 +31,6 @@ packages=(
    fuzzel
    sway
    mangowc
-   labwc
 )
 
 for package in "${packages[@]}"; do
@@ -49,6 +47,7 @@ done
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 
+dnf5 -y copr enable dennemann/MangoWC 
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
